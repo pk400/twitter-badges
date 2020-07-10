@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "twitter-badges",
+  "version": "1.0",
+  "description": "Adds additional badges to Twitter accounts.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["content.js"],
+      "css": [
+        "style/content.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "img.jpg"
+  ]
+}
